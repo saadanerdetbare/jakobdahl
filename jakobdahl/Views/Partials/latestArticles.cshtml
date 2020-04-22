@@ -37,7 +37,7 @@
                         {
                             @Umbraco.GetDictionaryValue("Article.By")@Html.Raw("&nbsp;")@article.AuthorName
                         }
-                        @Umbraco.GetDictionaryValue("Article.On") @article.ArticleDate.ToString("MMMM dd, yyyy")
+                        @Umbraco.GetDictionaryValue("Article.On") @article.ArticleDate.ToString(Umbraco.GetDictionaryValue("Article.DateFormat"))
                     </p>
                 </div>
                 <hr>
