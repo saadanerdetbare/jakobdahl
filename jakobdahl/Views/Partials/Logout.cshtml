@@ -9,8 +9,9 @@
 		var myUser = System.Web.Security.Membership.GetUser();
 		if (myUser != null)
 		{
-			<p><strong>Logged in as</strong><span>@myUser.UserName</span></p>
-			<button name="login" type="submit"><span>Logout</span><i class="fas fa-arrow-right"></i></button>
+			<p><strong>Logged in as</strong></p>
+			<p>@myUser.UserName</p>
+			<button name="login" class="btn btn-primary" type="submit"><span>Logout </span><i class="fas fa-sign-out-alt"></i></button>
 																		 
 		}
 	}
