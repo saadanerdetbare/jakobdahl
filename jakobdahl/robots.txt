@@ -1,3 +1,4 @@
 User-agent: *
 Disallow /error
+Disallow /cookies
 Sitemap: https://jakobdahl.me/xmlsitemap

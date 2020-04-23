@@ -283,31 +283,30 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
-    <Content Include="css\*" />
-    <Content Include="scripts\*" />
-    <Content Include="config\**\*.xml" />
-	<Content Include="config\**\*.js" />
-    <Content Include="Umbraco\**\*.xml" />
-    <Content Include="Umbraco\**\*.js" />
-	<Content Include="Umbraco\**\*.css" />
-	<Content Include="Umbraco\**\*.map" />
-	<Content Include="Umbraco\**\*.less" />
-    <Content Include="Umbraco\**\*.svg" />
-	<Content Include="Umbraco\**\*.eot" />
-	<Content Include="Umbraco\**\*.ttf" />
-	<Content Include="Umbraco\**\*.otf" />
-	<Content Include="Umbraco\**\*.woff" />
-	<Content Include="Umbraco\**\*.woff2" />
-	<Content Include="Umbraco\**\*.gif" />
-    <Content Include="Umbraco\**\*.png" />
-    <Content Include="Umbraco\**\*.jpg" />
-    <Content Include="Umbraco\**\*.html" />
-	<Content Include="Umbraco\**\*.cshtml" />
-    <Content Include="vendor\**\*" />
-    <Content Include="Views\Web.config" />
-    <Content Include="Web.config" />
+    <Content Include="**\*.xml" />
+	<Content Include="**\*.js" />
+	<Content Include="**\*.css" />
+	<Content Include="**\*.less" />
+	<Content Include="**\*.map" />
+	<Content Include="**\*.cshtml" />
+    <Content Include="**\*.html" />
+    <Content Include="**\*.svg" />
+	<Content Include="**\*.eot" />
+	<Content Include="**\*.ttf" />
+	<Content Include="**\*.otf" />
+	<Content Include="**\*.woff" />
+	<Content Include="**\*.woff2" />
+	<Content Include="**\*.gif" />
+    <Content Include="**\*.png" />
+    <Content Include="**\*.jpg" />
+	<Content Include="**\*.ico" />
+	<Content Remove="App_Data\cache\**\*" />
+	<Content Remove="App_Data\TEMP\**\*" />
+	<Content Remove="bin\**\*" />
   </ItemGroup>
   <ItemGroup>
+	<Content Include="Views\Web.config" />
+	<Content Include="Web.config" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
@@ -322,7 +321,6 @@
     <Content Include="App_Data\packages\createdPackages.config" />
     <Content Include="App_Data\packages\installedPackages.config" />
     <None Include="packages.config" />
-	<Content Include="Views\**\*.cshtml" />
     <Content Include="Umbraco\assets\fonts\web.config" />
     <Content Include="Umbraco\Install\Views\Web.config" />
     <Content Include="Umbraco\Js\web.config" />
@@ -335,7 +333,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\TEMP\Install\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>
