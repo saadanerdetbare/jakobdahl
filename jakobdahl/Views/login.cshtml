@@ -1,0 +1,18 @@
+﻿@using Clean.Core.ViewModels
+@using Clean.Core.Extensions
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Login>
+	@{
+	Layout = "master.cshtml";
+	}
+@Html.Partial("~/Views/Partials/pageHeader.cshtml", new PageHeaderViewModel(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-10 mx-auto">
+
+			@{Html.RenderAction("RenderLogin", "Member");}
+		</div>
+	</div>
+</div>
+
+
+
