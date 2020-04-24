@@ -279,6 +279,8 @@
   <ItemGroup>
     <Compile Include="App_Data\Models\*.generated.cs" />
     <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Handlers\My404ContentFinder.cs" />
+    <Compile Include="Handlers\SetLastChanceContentFindersComposer.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -2253,6 +2255,7 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Umbraco\umbracoSettings.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2261,6 +2264,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="Views\MacroPartials\" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,6 +1,10 @@
 ﻿@inherits UmbracoViewPage<jakobdahl.Models.LoginModel>
 @using Umbraco.Web
 
+@{
+	string userName = Umbraco.GetDictionaryValue("Login.Username");
+}
+
 @if (!Umbraco.MemberIsLoggedOn())
 {
 	using (Html.BeginUmbracoForm("SubmitLogin", "Member", System.Web.Mvc.FormMethod.Post, new { id = "login" }))
@@ -8,11 +12,11 @@
 		@Html.AntiForgeryToken()
 		<div class="form-group">
 			@Html.LabelFor(m => m.Username)
-			@Html.TextBoxFor(m => m.Username, new { placeholder = "Username", @class="form-control" })
+			@Html.TextBoxFor(m => m.Username, new { placeholder = @Umbraco.GetDictionaryValue("Login.UsernamePlaceholder"), @class="form-control" })
 		</div>
 		<div class="form-group">
 			@Html.LabelFor(m => m.Password)
-			@Html.PasswordFor(m => m.Password, new { placeholder = "Password", @class="form-control" })
+			@Html.PasswordFor(m => m.Password, new { placeholder = @Umbraco.GetDictionaryValue("Login.PasswordPlaceholder"), @class="form-control" })
 		</div>
 		<div>
 			@Html.ValidationSummary()
